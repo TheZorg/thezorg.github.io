@@ -183,3 +183,9 @@ ul.posts span {
 .post pre.terminal code {
     background-color: #333;
 }
+
+.post .categories {
+    font-size: 80%;
+    color: #aaa;
+    margin-top: 3em;
+}

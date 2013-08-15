@@ -2,6 +2,7 @@
 layout: post
 title:  "3 weeks of Scrum"
 date:   2013-08-15 22:52:48
+categories: agile
 ---
 
 No budget, no clear requirements, and a team of four people: this was the setting for my first foray into project management.
