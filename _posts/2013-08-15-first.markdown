@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "3 weeks of Scrum"
+date:   2013-08-15 22:52:48
+---
+
+No budget, no clear requirements, and a team of four people: this was the setting for my first foray into project management.
+
+The premise was pretty simple: build a small, one page web app, optimized for desktop and iPad. No database, barely any server-side logic, a bit of Javascript. If technical complexity was the only factor for risk, this was pretty low on the scale. But here's the thing: no budget = no time, and shifting requirements are a killer for time-constrained projects. And boy did the requirements shift! But we didn't care: we _wanted_ them to change. We were ready. And we finished the project in three weeks, releasing at the end a high quality product.
+
+# How did we do it?
+**Scrum**.
+
+I'm sure you've heard of it. No? Go check out this [awesome presentation by Jurgen Appelo][zen-of-scrum], I'll wait here.
+
+Being a small team and having only one short project to work on, we cut out some of the parts that weren't necessary for us: sprint retrospective meetings, story points (we relied on hours estimates), and the release backlog (we only had one release).
+
+Here's how we made it work for us:
+
+- **One week sprints**, for a total of three sprints.
+- Each sprint starts with a sprint planning meeting of two hours, where we break down user stories in task and assign them time estimates, and populate the sprint backlog. The key here is to **have a clear goal for the sprint**. Having something to aim for makes it easier to select, estimate and break down user stories. 
+- Whatever happens, **don't add stories to your sprint**. It might be tempting, people might pressure you into doing so, but you must resist. They won't have to wait too long for their feature: worst case scenario, they'll have it in two weeks. If it is absolutely necessary to include it now, check if you are comfortable with your ability to complete _all_ the tasks. If you aren't, I suggest taking out a less urgent story.
+- The day following the last day of the sprint, a sprint demo meeting is held. The client (in this case an internal client) gives his feedback on the functionalities developped during the sprint. **Demos are super important**: they give visibility to your project, keep your client in the loop and are a great platform to get quick feedback.
+- After the client demo, the next sprint's planning meeting takes place, meaning **we can directly integrate the client's feedback into the new sprint**.
+- Just enough **documentation**. It might seem counter-intuitive for some to document for such a small-scale project, but believe me, three weeks is more than enough time to forget what the hell is going on with this obscure business logic (oh that's right: this variable is only counted in the sum if that other variable is less than 300. _Duh._) I'm not talking about formal 50-pages-with-table-of-contents-and-APA-citations documents: simple spreadsheets on Google Docs are more than enough.
+
+If you are a small team working on a short-term, time-constrained and uncertain project, don't hesitate to use Scrum: you don't have to use the whole framework, keep only what will make you deliver as efficiently as possible.
+
+[zen-of-scrum]: http://www.slideshare.net/jurgenappelo/the-zen-of-scrum-10 
