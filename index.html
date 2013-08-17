@@ -7,7 +7,10 @@ title: Zorg
   <h1>Blog Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <h1><a href="{{ post.url }}">{{ post.title }}</a></h1></li>
+    <li>
+    <span>{{ post.date | date_to_string }}</span> &raquo; <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <div class="excerpt">{{ post.excerpt }}<a href="{{ post.url }}">Continue reading...</a></div>
+    </li>
     {% endfor %}
   </ul>
 </div>

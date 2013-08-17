@@ -27,9 +27,25 @@ h1, h2, h3, h4, h5, h6 {
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+/*a         { color: #00a; }*/
+/*a:hover   { color: #000; }*/
+/*a:visited { color: #a0a; }*/
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
 
 /*****************************************************************************/
 /*
@@ -39,16 +55,31 @@ a:visited { color: #a0a; }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
+    font-size: 115%;
   }
 
-  ul.posts {
+ul.posts {
       list-style-type: none;
       margin-bottom: 2em;
 }
 
 ul.posts li {
     line-height: 1.75em;
+}
+
+ul.posts li h1 {
+    display: inline;
+}
+
+ul.posts li .excerpt {
+    margin-left: 1em;
+    font-size: 80%;
+    color: #aaa;
+}
+
+ul.posts li .excerpt p {
+    margin: 0;
+    display: inline;
 }
 
 ul.posts span {
@@ -78,14 +109,13 @@ ul.posts span {
 
 .site .header h1.title {
     display: inline-block;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     font-size: 50px;
     font-weight: 200;
-    text-transform: capitalize;
 }
 
 .site .header h1.title a {
-    color: #a00;
+    /*color: #a00;*/
 }
 
 .site .header h1.title a:hover {
@@ -109,6 +139,12 @@ ul.posts span {
 .site .header .nav > li {
     float: right;
     margin: 0 20px;
+}
+
+.site .header .tagline {
+    margin-bottom: 4rem;
+    font-size: 95%;
+    color: #aaa;
 }
 
 .site .meta {
@@ -188,4 +224,30 @@ ul.posts span {
     font-size: 80%;
     color: #aaa;
     margin-top: 3em;
+}
+
+/*****************************************************************************/
+/*
+/* About
+/*
+/*****************************************************************************/
+
+.circular {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.profile {
+    background: url(/img/profile.jpg) no-repeat;
+    background-size: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    float: left;
+    margin-right: 3rem;
 }
